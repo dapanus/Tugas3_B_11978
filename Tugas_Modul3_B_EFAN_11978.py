@@ -70,8 +70,7 @@ if uploaded_file is not None:
     st.write("<h3 style='text-align: center; color: #007366;'>Data yang diupload:</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_directory = r'D:\semester 5\Mesin Learning\Tugas3_B_11978\Tugas3_B_11978'
-    model_path = os.path.join(model_directory, r'RR_IPK_model.pkl')
+    model_path = r'RR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
